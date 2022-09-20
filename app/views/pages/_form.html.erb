@@ -1,0 +1,49 @@
+<%= stylesheet_link_tag "register"%>
+<br>
+<br>
+<br>
+<div class="res">
+  <div class="uk-card2 uk-card-default uk-card-hover uk-card-body">
+
+<h1>New restaurant</h1>
+<br>
+
+<%= form_with(model: restaurant) do |form| %>
+  <% if restaurant.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+
+      <ul>
+        <% restaurant.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.text_field :name, class: "form-control", placeholder: "Name" %>
+  </div>
+<br>
+  <div>
+    <%= form.text_field :description, class: "form-control", placeholder: "Description" %>  
+  </div>
+<br>
+  <div>
+    <%= form.text_field :city, class: "form-control", placeholder: "City" %>
+  </div>
+<br>
+
+
+
+  <div>
+    <%= form.submit class: "btn btn-outline-primary" %>
+  </div>
+  <br>
+  <br>
+
+  <%= form.number_field :user_id, id: :restaurant_user_id, value: current_user.id, type: :hidden %>
+<% end %>
+
+</div>
+</div>

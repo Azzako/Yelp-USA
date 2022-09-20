@@ -1,0 +1,50 @@
+html {
+    background-color: rgb(228, 239, 246);
+}
+
+
+body{
+    background-color:rgb(228, 239, 246);
+}
+  
+.uk-card{
+    margin: auto;
+    width: 50%;
+    height: 300px;
+}
+ .uk-card1{
+     margin: auto;
+     width: 50%;
+     height: 360px;
+}
+.uk-card2{
+    margin: auto;
+    width: 50%;
+    height: 375px;
+}
+
+
+.res {
+  text-align: center;
+  margin: auto;
+}
+.rim{
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(240, 251, 240);
+    padding: 10px;
+    text-align: center;
+}
+
+.field{
+    margin-left: -610px;
+}
+
+
+.container{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.out{
+    margin-left: 1400px;
+}

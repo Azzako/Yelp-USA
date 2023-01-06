@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
   def create
     @restaurant = Restaurant.find(params[:id])
-
+ 
     @restaurant = Restaurant.new(restaurant_params)
 
     respond_to do |format|
